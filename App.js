@@ -5,7 +5,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>NashBet APP. Sua melhor aposta!</Text>
+      <Text style={styles.title}>NashBet APP. Sua melhor aposta!</Text>
       <StatusBar style="inverted" />
     </View>
   );
@@ -18,6 +18,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  
+  title: {
+    color: '#FFD700',
+    fontSize: 18,
+
+
+  }
     
 });
