@@ -4,14 +4,14 @@ import { StyleSheet, Text, TextInput, View, TouchableOpacity, KeyboardAvoidingVi
 
 export default function App() {
   return (
-    <KeyboardAvoidingView style={ styles.background }>
+    <KeyboardAvoidingView style={styles.background}>
       <View>
         <StatusBar style="inverted" />
-        <Text style={ styles.title }>NashBet APP. Sua melhor aposta!</Text>
+        <Text style={styles.title}>NashBet APP. Sua melhor aposta!</Text>
         
-        <View style={ styles.container }>               
+        <View style={styles.container }>               
           <TextInput
-            style={ styles.input}
+            style={styles.input}
             placeholder='E-mail'
             keyboardType='email-address'
             placeholderTextColor={'#aaa'}
@@ -19,13 +19,13 @@ export default function App() {
           />
 
           <TextInput 
-            style={styles.input }         
+            style={styles.input}         
             placeholder='Senha'
-            keyboardType='numeric'
+            keyboardType='email-address'
             placeholderTextColor={'#aaa'}                                       
           />
 
-          <TouchableOpacity style={ styles.btnSubmit }>
+          <TouchableOpacity style={styles.btnSubmit}>
             <Text style={styles.submitText}>Acessar</Text>              
           </TouchableOpacity>
 
@@ -50,8 +50,7 @@ const styles = StyleSheet.create({
     
   },
 
-  title: {
-    flexDirection: 'column',
+  title: {    
     color: '#FFD700',
     fontSize: 18,
     alignItems:'center',
@@ -66,7 +65,6 @@ const styles = StyleSheet.create({
   },
 
   input:{
-    flexDirection: 'row',
     backgroundColor: '#fff',
     width: '90%',
     marginBottom: 15,
@@ -77,17 +75,21 @@ const styles = StyleSheet.create({
   },
 
   btnSubmit: {
-    backgroundcolor: '#35AAFF',
+    backgroundColor: '#35AAFF',
     width: '90%',
     height: 45,
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 10,
+    marginBottom: 7,
 
   },
   submitText:{
     color: '#fff',
     fontSize: '16'
+  },
+  btnRegister: {
+
   },
   
   registerText: {
