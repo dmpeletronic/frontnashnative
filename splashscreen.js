@@ -6,8 +6,7 @@ export default function app () {
     return (
         <View>
             <View style={styles.background}>
-                <StatusBar style="inverted"/>
-                
+                                
                 <Text style={styles.texto}>NashBet</Text>
                 <Text style={styles.texto}>Sua melhor aposta!</Text>
             </View>
@@ -20,9 +19,9 @@ const styles = StyleSheet.create ({
     background: {
         flex: 1,      
         backgroundColor: '#006400',
-        alignItems: 'Center',
-        justifyContent: 'Center',
-                        
+        alignItems: 'center',
+        justifyContent: 'center',
+
     },
 
     texto: {
